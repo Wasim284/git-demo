@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Carter | Portfolio</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --accent: #22d3ee;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: linear-gradient(135deg, #020617, var(--bg));
+        color: var(--text);
+      }
+
+      .container {
+        width: min(1000px, 92%);
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 4rem 0 3rem;
+      }
+
+      .hero {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3.4rem);
+      }
+
+      .tagline {
+        color: var(--muted);
+        font-size: 1.1rem;
+        max-width: 58ch;
+      }
+
+      .cta {
+        display: flex;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        border: 1px solid transparent;
+        border-radius: 0.7rem;
+        padding: 0.7rem 1.1rem;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .btn.primary {
+        background: var(--accent);
+        color: #082f49;
+      }
+
+      .btn.secondary {
+        border-color: #334155;
+        background: #0b1224;
+      }
+
+      section {
+        padding: 1.2rem 0 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+
+      .card {
+        background: linear-gradient(180deg, #172036, var(--card));
+        border: 1px solid #334155;
+        border-radius: 0.8rem;
+        padding: 1rem;
+      }
+
+      .card h3 {
+        margin: 0 0 0.4rem;
+      }
+
+      .card p,
+      li {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0;
+        list-style: none;
+      }
+
+      .skills li {
+        background: #0b1224;
+        border: 1px solid #334155;
+        padding: 0.4rem 0.65rem;
+        border-radius: 0.5rem;
+      }
+
+      footer {
+        padding: 2rem 0 3rem;
+        color: var(--muted);
+        border-top: 1px solid #1e293b;
+      }
+
+      .contact a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <div class="hero">
+        <p>👋 Hi, I'm</p>
+        <h1>Alex Carter</h1>
+        <p class="tagline">
+          Front-end developer crafting responsive, accessible web experiences with clean design and fast performance.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about">
+        <h2>About</h2>
+        <p class="tagline">
+          I build polished interfaces for startups and small businesses. My focus is creating products that are intuitive,
+          maintainable, and delightful to use.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>ShopSphere</h3>
+            <p>E-commerce storefront redesign that improved conversion by 19% through simplified navigation.</p>
+          </article>
+          <article class="card">
+            <h3>FocusFlow</h3>
+            <p>Productivity dashboard with calendar sync, task automation, and personalized analytics.</p>
+          </article>
+          <article class="card">
+            <h3>TrailMap</h3>
+            <p>Mobile-first travel planner with offline support and collaborative itinerary editing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Accessibility (WCAG)</li>
+          <li>Performance Optimization</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p class="tagline">
+          Interested in collaborating? Reach me at
+          <a href="mailto:alex.carter@example.com">alex.carter@example.com</a>
+          or connect on
+          <a href="#">LinkedIn</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="container">© 2026 Alex Carter. All rights reserved.</footer>
+  </body>
+</html>
